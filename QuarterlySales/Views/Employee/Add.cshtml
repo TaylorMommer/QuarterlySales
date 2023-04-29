@@ -1,0 +1,68 @@
+﻿@model Employee
+@{
+    ViewBag.Title = "Add Employee";
+}
+
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/minimum-age.js"></script>
+}
+<div asp-validation-summary="All" class="text-danger">
+</div>
+    <form asp-controller="Employee" asp-action="Add" method="post">
+        <div class="form-group row">
+            <div class="col-sm-2"><label>First Name:</label></div>
+            <div class="col-sm-4">
+                <input type="text" asp-for="Firstname" class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="Firstname" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Last Name:</label></div>
+            <div class="col-sm-4">
+                <input type="text" asp-for="Lastname"
+                   class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="Lastname"
+                  class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Date of Birth:</label></div>
+            <div class="col-sm-4">
+                <input type="datetime" asp-for="DOB" class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="DOB" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Date of Hire:</label></div>
+            <div class="col-sm-4">
+                <input type="datetime" asp-for="DateOfHire" class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="DateOfHire" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Manager:</label></div>
+            <div class="col-sm-4">
+                <input type="datetime" asp-for="ManagerId" class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="ManagerId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-2 col-sm-4">
+                <button type="submit" class="btn btn-primary">Add</button>
+                <button type="reset" class="btn btn-primary">Cancel</button>
+
+            </div>
+        </div>
+    </form>

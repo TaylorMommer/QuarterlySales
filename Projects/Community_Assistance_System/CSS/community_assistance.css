@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+/* structural items */
+article, aside, details, dl, figcaption, figure, footer, header, main, nav, section {
+	display: block;
+}
+
+
+
+/* Default colors, margins and sizing */
+
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+html, button, input, select, textarea {
+	font-family: serif;
+	color: black;
+}
+body {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+}

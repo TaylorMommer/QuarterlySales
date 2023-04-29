@@ -1,0 +1,58 @@
+﻿@model Sales
+@{
+    ViewBag.Title = "Add Sales";
+}
+
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/minimum-age.js"></script>
+}
+<h1>Add Sales</h1>
+
+    <form asp-controller="Sales" asp-action="Add" method="post">
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Quarter:</label></div>
+            <div class="col-sm-4">
+                <input type="text" asp-for="Quarter" class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="Quarter" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Year:</label></div>
+            <div class="col-sm-4">
+                <input type="text" asp-for="Year"
+                   class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="Year"
+                  class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Amount:</label></div>
+            <div class="col-sm-4">
+                <input type="date" asp-for="Amount" class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"><label>Employee:</label></div>
+            <div class="col-sm-4">
+                <input type="option" asp-for="Employee" class="form-control" />
+            </div>
+            <div class="col">
+                <span asp-validation-for="Employee" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-2 col-sm-4">
+                <button type="submit" class="btn btn-primary">Add</button>
+                <a href="Index" class="btn btn-primary">Cancel</a>
+            </div>
+        </div>
+    </form>

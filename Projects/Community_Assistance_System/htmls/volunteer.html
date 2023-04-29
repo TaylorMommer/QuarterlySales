@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8" />
+	<link href= "CSS/community_assistance.css" rel="stylesheet" />
+	<link href= "CSS/CA_Base.css" rel="stylesheet" />
+  <link href= "CSS/forms.css" rel="stylesheet" />
+    <title>Community Assistance South Dakota</title>
+</head>
+
+
+<body>
+	<div class="header">
+	<img src="Images/neighbors.jpg" id="headerImage" alt="neighbors" />
+	<h1>Welcome to Community Assistance</h1>
+	</div>
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="request.html">Request</a>
+  <a href="volunteer.html">Volunteer</a>
+  <a href="logout.html" style="float:right">Log Out</a>
+  <a href="profile.html" style="float:right">#USERNAME</a>
+</div>
+
+<!-----------------------Left Column(Content)---------------------------->
+<div class="row">
+  <div class="leftcolumn">
+    <!--Search Function-->
+    <Label>Category</Label>
+    <select onchange="">
+      <option value="All" selected>All</option>
+      <option value="Grocery">Groceries</option>
+      <option value="Yardwork">Yardwork</option>
+      <option value="Care">Care</option>
+      <option value="Home Maintenance">Home Maintenance</option>
+      <option value="Cleaning">Cleaning</option>
+      <option value="Disaster Relief">Disaster Relief</option>
+      <option value="Ride Share">Ride Share</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <!--Request cards generate for each request. Automatically sorts by Date.-->
+    <div class="requestCard">
+      <h2>$REQUEST_TITLE</h2>
+      <h3>$REQUESTING_USERNAME</h3>
+      <h5>Service: $SERVICE</h5>
+      <p>Description: $DESCRIPTION</p>
+      <p>Date Needed: $DATE</p>
+      <button>Volunteer</button>
+    </div>
+    <div class="requestCard">
+      <h2>$REQUEST_TITLE</h2>
+      <h3>$REQUESTING_USERNAME</h3>
+      <h5>Service: $SERVICE</h5>
+      <p>Description: $DESCRIPTION</p>
+      <p>Date Needed: $DATE</p>
+      <button>Volunteer</button>
+    </div>
+    <div class="requestCard">
+      <h2>$REQUEST_TITLE</h2>
+      <h3>$REQUESTING_USERNAME</h3>
+      <h5>Service: $SERVICE</h5>
+      <p>Description: $DESCRIPTION</p>
+      <p>Date Needed: $DATE</p>
+      <button>Volunteer</button>
+    </div>
+    <div class="requestCard">
+      <h2>$REQUEST_TITLE</h2>
+      <h3>$REQUESTING_USERNAME</h3>
+      <h5>Service: $SERVICE</h5>
+      <p>Description: $DESCRIPTION</p>
+      <p>Date Needed: $DATE</p>
+      <button>Volunteer</button>
+    </div>
+    <div class="requestCard">
+      <h2>$REQUEST_TITLE</h2>
+      <h3>$REQUESTING_USERNAME</h3>
+      <h5>Service: $SERVICE</h5>
+      <p>Description: $DESCRIPTION</p>
+      <p>Date Needed: $DATE</p>
+      <button>Volunteer</button>
+    </div>
+  </div>
+  
+<!----------------------------------------------------------------------->
+
+
+<!---------------------Right Column(Info Bar)---------------------------->
+  <div class="rightcolumn">
+    <!--Urgent Requests-->
+    <div class="card">
+      <h2>Urgent Requests</h2>
+      <div class="img"><p>Image</p></div>
+      <div class="img"><p>Image</p></div>
+      <div class="img"><p>Image</p></div>
+      <div class="img"><a href="volunteer.html">View All Requests</a></div>
+    </div>
+
+    <!--Resources-->
+    <div class="card">
+      <h2>Resources</h2>
+      <div class="img" style="height:100px;">Image</div>
+      <p>***About us***.</p>
+    </div>
+
+    <!--Connect-->
+    <div class="card">
+      <h2>Connect</h2>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------->
+
+
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
